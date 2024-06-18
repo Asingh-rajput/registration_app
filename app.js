@@ -21,6 +21,8 @@ require('./config/passport')(passport);
 
 // Body parser
 app.use(bodyParser.urlencoded({ extended: false }));
+// Add this line in your app.js file to use the dashboard route
+app.use('/', require('./routes/dashboard'));  // Or './routes/index' depending on your file name
 
 // Express session
 app.use(session({

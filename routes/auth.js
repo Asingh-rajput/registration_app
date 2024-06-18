@@ -109,4 +109,10 @@ router.get('/logout', (req, res) => {
     res.redirect('/auth/login');
 });
 
+// Dashboard page
+router.get('/dashboard', (req, res) => {
+    res.send('Welcome to your dashboard');
+});
+
+
 module.exports = router;
